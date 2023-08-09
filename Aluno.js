@@ -20,7 +20,7 @@ class Aluno {
     return media.toFixed(2);
   }
 
-  verificarAprovacao(mediaMinima = 7) {
+  verificarAprovacao(mediaMinima = 60) {
     const media = this.calcularMedia();
     if (media >= mediaMinima) {
       return `${this.nome} foi aprovado com média ${media}.`;
@@ -35,10 +35,10 @@ const aluno1 = new Aluno('João');
 const aluno2 = new Aluno('Maria');
 
 // Adicionando notas aos alunos
-aluno1.adicionarNota(8);
-aluno1.adicionarNota(7);
-aluno2.adicionarNota(6);
-aluno2.adicionarNota(9);
+aluno1.adicionarNota(10);
+aluno1.adicionarNota(100);
+aluno2.adicionarNota(50);
+aluno2.adicionarNota(90);
 
 // Calculando média e verificando aprovação
 console.log(aluno1.verificarAprovacao());
