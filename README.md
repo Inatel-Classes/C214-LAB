@@ -1,4 +1,4 @@
-# Git e GitHub: Resumo de Conceitos e Comandos
+# Git e GitHub
 
 ## Git
 
