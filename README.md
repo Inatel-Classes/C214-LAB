@@ -1,59 +1,55 @@
-# Git e GitHub
+# Introdução ao Svelte
 
-## Git
+## O que é o Svelte?
 
-O Git é um sistema de controle de versões distribuído amplamente utilizado para rastrear mudanças em projetos de software. Ele permite que você trabalhe em equipes e acompanhe o histórico de alterações em seus projetos.
+O Svelte é um framework front-end para a construção de interfaces de usuário interativas e reativas. Ele difere de outros frameworks como React, Vue ou Angular porque realiza a maior parte do trabalho pesado durante a fase de compilação, gerando código otimizado que é executado diretamente no navegador.
 
-### Conceitos Básicos
+## Principais Características:
+1. Compilação Antecipada (Ahead-of-Time Compilation):
+Ao contrário de outros frameworks que executam grande parte do processamento no lado do cliente, o Svelte move muitas das tarefas de tempo de execução para o momento da compilação. Isso resulta em aplicativos mais rápidos e eficientes.
 
-- **Repositório**: Local onde seus projetos são armazenados e gerenciados.
-- **Commit**: Uma snapshot de suas alterações em um determinado momento.
-- **Branch**: Uma linha independente de desenvolvimento dentro do repositório.
-- **Merge**: Combinação de duas ou mais branches.
-- **Pull Request (PR)**: Proposta de alteração que pode ser revisada e mesclada.
+2. Reatividade Automática:
+No Svelte, você declara variáveis reativas e o framework automaticamente rastreia as dependências e atualiza a interface do usuário sempre que necessário.
 
-### Comandos Básicos
+3. Componentização:
+O Svelte permite criar componentes reutilizáveis, assim como outros frameworks. No entanto, o código do componente Svelte é compilado para código altamente otimizado, o que ajuda a reduzir o tamanho final do pacote.
 
-- `git init`: Inicia um novo repositório Git.
-- `git clone <URL>`: Clona um repositório remoto para sua máquina local.
-- `git add <arquivo>`: Adiciona alterações para serem preparadas para commit.
-- `git commit -m "mensagem"`: Confirma as alterações com uma mensagem descritiva.
-- `git pull`: Puxa as alterações do repositório remoto para o local.
-- `git push`: Envia as alterações locais para o repositório remoto.
-- `git branch`: Lista as branches presentes no repositório.
-- `git checkout <branch>`: Altera para a branch especificada.
-- `git merge <branch>`: Mescla as alterações da branch especificada na branch atual.
-- `git status`: Exibe o estado atual das alterações no repositório.
+4. Diretivas Intuitivas:
+O Svelte fornece diretivas para vincular, iterar, condicionar e interagir com o DOM de maneira intuitiva. Isso permite criar interfaces complexas de forma concisa e legível.
 
-## GitHub
+5. Transições e Animações Simplificadas:
+O Svelte facilita a criação de transições e animações suaves com suas diretivas de transição embutidas.
 
-O GitHub é uma plataforma de hospedagem de código-fonte baseada em Git. Ela fornece recursos adicionais para colaboração e gerenciamento de projetos.
+6. Sapper:
+O Sapper é um framework relacionado que permite construir aplicativos web progressivos (PWAs) de maneira eficiente, aproveitando o poder do Svelte.
 
-### Conceitos Básicos
+7. Minimização de Boilerplate:
+O Svelte reduz a quantidade de código de boilerplate necessário para construir componentes e aplicativos, permitindo que os desenvolvedores se concentrem mais na lógica de negócios real.
 
-- **Repositório Remoto**: Versão online do seu repositório Git local.
-- **Fork**: Cria uma cópia independente de um repositório para sua conta.
-- **Pull Request (PR)**: Solicita a incorporação de suas alterações no repositório original.
-- **Issues**: Rastreamento de tarefas, bugs ou melhorias para o projeto.
-- **Merge Pull Request**: Combinar as alterações de um PR após a revisão.
+## Quando Usar o Svelte?
+O Svelte é uma escolha sólida quando você deseja criar interfaces de usuário reativas, otimizadas e rápidas sem sacrificar a facilidade de desenvolvimento. Ele é particularmente apropriado para aplicativos com necessidades de desempenho rigorosas, como PWAs, jogos web e aplicações de visualização de dados.
 
-### Comandos Básicos
 
-- `git remote add origin <URL>`: Vincula o repositório local a um repositório remoto.
-- `git push -u origin <branch>`: Envia as alterações locais para o repositório remoto pela primeira vez.
-- Ao criar um Fork:
-  - Clone seu fork localmente: `git clone <URL do seu fork>`.
-  - Mantenha seu fork atualizado com o repositório original:
-    1. `git remote add upstream <URL do repositório original>`.
-    2. `git fetch upstream`.
-    3. `git merge upstream/main` (ou outra branch).
-- Ao fazer um Pull Request:
-  - Faça suas alterações e faça commit no seu fork.
-  - Crie um PR no repositório original através do GitHub.
 
-## Dicas Adicionais
+## Instalação
 
-- Escreva mensagens de commit descritivas e significativas.
-- Utilize branches para isolar diferentes fluxos de trabalho.
-- Regularmente faça pull das atualizações do repositório remoto para manter-se sincronizado.
+Para começar a utilizar o Svelte, você precisará ter o Node.js instalado em seu sistema. A partir daí, siga estas etapas:
+
+1. **Crie um novo projeto Svelte:**
+```bash
+npx degit sveltejs/template my-svelte-project
+cd my-svelte-project
+```
+
+### Instale as dependências:
+```bash
+npm install
+```
+
+### Inicie o servidor de desenvolvimento:
+```bash
+npm install
+ ```
+
+ ## O servidor irá aparecer no terminal (seu localhost)
 
