@@ -14,7 +14,7 @@ Os testes neste projeto seguem uma estrutura padrão de preparação, ação, as
 
 1. **Preparação**: Configuramos o ambiente de teste, como a criação de instâncias de objetos ou a configuração de variáveis de teste.
 
-2. **Ação**: Executamos a função `calculateIMC` com diferentes entradas.
+2. **Ação**: Executamos a função `calcularIMC` com diferentes entradas.
 
 3. **Assertiva**: Verificamos se o resultado da função corresponde ao resultado esperado usando as asserções do Chai.
 
