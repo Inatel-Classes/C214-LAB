@@ -1,6 +1,6 @@
 ## Testes Unitários
 
-Os testes unitários são uma prática essencial de desenvolvimento de software que envolve a verificação de unidades individuais de código para garantir que funcionem conforme o esperado. No contexto deste projeto, estamos testando a função `calculateBMI` para garantir que ela retorne resultados corretos.
+Os testes unitários são uma prática essencial de desenvolvimento de software que envolve a verificação de unidades individuais de código para garantir que funcionem conforme o esperado. No contexto deste projeto, estamos testando a função `calculateIMC` para garantir que ela retorne resultados corretos.
 
 ## Bibliotecas Utilizadas
 
