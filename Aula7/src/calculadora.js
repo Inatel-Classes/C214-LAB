@@ -1,5 +1,3 @@
-// calculator.js
-
 function soma(a, b) {
     return (a + b);
 }
