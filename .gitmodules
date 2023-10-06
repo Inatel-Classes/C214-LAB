@@ -1,0 +1,3 @@
+[submodule "Aula8/C214-CI_CD"]
+	path = Aula8/C214-CI_CD
+	url = https://github.com/Inatel-Classes/C214-CI_CD.git
