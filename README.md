@@ -1,34 +1,31 @@
-## O que é um teste mock?
+[![CI Class](https://github.com/Inatel-Classes/C214-CI_CD/actions/workflows/ci.yml/badge.svg)](https://github.com/Inatel-Classes/C214-CI_CD/actions/workflows/ci.yml)
 
-Um teste mock é uma simulação de uma parte do código que você está testando. Isso permite que você isole a funcionalidade que está testando, criando um ambiente controlado e previsível para seus testes. Usando mocks, você pode:
+# CI/CD e GitHub Actions
 
-- Simular interações com componentes externos, como bancos de dados ou APIs.
-- Substituir funções complexas por versões mais simples para simplificar o teste.
-- Verificar se as funções foram chamadas com os argumentos corretos e quantas vezes.
 
-## Instalação das Dependências
+## O que é CI/CD?
+> Integração Contínua (CI) é uma prática de desenvolvimento de software que visa automatizar a integração de código de vários colaboradores em um repositório central. Isso envolve a execução de testes automatizados e a verificação de integridade do código em cada commit ou pull request.
 
-```bash
-// Inicie o seu repositório com o package:
-npm init
-```
+> Entrega Contínua (CD), por outro lado, é a extensão da CI, que se concentra em automatizar o processo de entrega do software para um ambiente de produção ou staging. O objetivo é garantir que as alterações de código possam ser entregues com eficiência, segurança e confiabilidade aos usuários finais.
 
-```bash
-// Instale o Jest como uma dependência de desenvolvimento:
-npm install jest
-```
 
-```bash
-// Configure o script de teste no seu arquivo package.json para jest:
-"scripts": {
-  "test": "jest"
-}
-```
+## Por que CI/CD é importante?
 
-```bash
-// Para executar o teste:
-npm test
-}
-```
+> A implementação de CI/CD traz vários benefícios para o desenvolvimento de software, incluindo:
 
-# O mock é muito usual para "simular" comportamentos.
+1. Detecção precoce de erros: A detecção de erros é automatizada, o que significa que os problemas são identificados e corrigidos rapidamente.
+
+2. Builds consistentes: Cada versão do software é construída a partir do mesmo código-fonte, garantindo que os ambientes de teste e produção sejam consistentes.
+
+3. Automatização: Tarefas tediosas e repetitivas, como compilação, testes e implantação, são automatizadas, economizando tempo e reduzindo erros humanos.
+
+4. Entrega rápida: As atualizações de software podem ser entregues mais rapidamente aos usuários finais.
+
+
+## GitHub Actions e Pipelines
+O GitHub Actions é uma plataforma de automação integrada diretamente ao GitHub, que permite criar e executar fluxos de trabalho automatizados, conhecidos como "Actions". Essas Actions podem ser usadas para criar pipelines de CI/CD personalizados para seu projeto.
+
+
+## Como o GitHub Actions gera pipelines?
+As pipelines de CI/CD no GitHub Actions são definidas em arquivos YAML chamados "workflow files". Cada workflow file contém instruções para automatizar tarefas específicas, como a construção de aplicativos, a execução de testes e a implantação em ambientes de produção.
+Você pode personalizar seus fluxos de trabalho de acordo com as necessidades do seu projeto, incluindo a integração com ferramentas de terceiros, notificações e muito mais.
